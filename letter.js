@@ -4,8 +4,8 @@ class Letter {
         this.guessed = false;
     }
 
-    revealLetter() {
-        if (this.guessed) {
+    toString() {
+        if (this.guessed || this.letter === " ") {
             return this.letter;
         } else {
             return "_"
@@ -13,9 +13,11 @@ class Letter {
     }
 
     guessLetter(x) {
-        if (x == this.letter) {
+        if (x == this.letter.toLowerCase()) {
             this.guessed = true;
-            this.revealLetter();
+            this.toString();
         }
     }
 }
+
+module.exports = Letter;
