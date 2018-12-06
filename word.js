@@ -32,3 +32,5 @@ class Word {
         this.toString();
     }
 }
+
+module.exports = Word;

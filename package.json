@@ -1,0 +1,22 @@
+{
+  "name": "word-guess-constructor",
+  "version": "1.0.0",
+  "description": "A word guess game built with constructors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asharman/Word-Guess-Constructor.git"
+  },
+  "author": "Austin Sharman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asharman/Word-Guess-Constructor/issues"
+  },
+  "homepage": "https://github.com/asharman/Word-Guess-Constructor#readme",
+  "dependencies": {
+    "inquirer": "^6.2.1"
+  }
+}
