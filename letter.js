@@ -5,7 +5,8 @@ class Letter {
     }
 
     toString() {
-        if (this.guessed || this.letter === " ") {
+        if (this.guessed || this.letter === " " || this.letter === "'" || this.letter === ".") {
+            this.guessed = true;
             return this.letter;
         } else {
             return "_"

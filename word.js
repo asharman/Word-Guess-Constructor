@@ -2,6 +2,7 @@ const Letter = require('./letter');
 
 class Word {
     constructor(word) {
+        this.word = word;
         this.wordArray = word.split("");
         this.array = [];
         this.assignLetters();
@@ -25,11 +26,29 @@ class Word {
     }
 
     guessCharacter(x) {
+        let count = 0;
         for (let i in this.array) {
             let LetterObj = this.array[i];
             LetterObj.guessLetter(x);
+            if (LetterObj.letter.toLowerCase() == x){ count++;}
         }
-        this.toString();
+        // this.toString();
+        if (count > 0) {return true;} else {return false;};
+    }
+
+    checkLettersForGuessed() {
+        let count = 0;
+        for (let i in this.array) {
+            let LetterObj = this.array[i];
+            if (!LetterObj.guessed) {
+                count ++;
+            }
+        }
+        if (count > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
