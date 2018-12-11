@@ -4,7 +4,7 @@ This application is a word guess game. It was designed with classes and construc
 
 To play simply run the index.js file and the prompt will load up with your word.
 
-You can either guess one letter at a time, or take a ris and guess the whole word!
+You can either guess one letter at a time, or take a risk and guess the whole word!
 
 ![Game playing through 2 rounds](assets/game.gif)
 
